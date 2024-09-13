@@ -1,6 +1,6 @@
 'use client'
 
-import LineIcon from '@/assets/svgs/LineIcon'
+import LineIcon from '@/assets/svgs/lineicon'
 import { usePage } from '@/contexts/PageContext';
 import { ChevronRightIcon, DotFilledIcon } from '@radix-ui/react-icons'
 import React from 'react'

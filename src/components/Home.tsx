@@ -3,9 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 import icon from '@/assets/icon.jpeg'
-import LinkedinIcon from '../assets/svgs/LinkedinIcon';
-import GithubIcon from '../assets/svgs/githubIcon';
-import InstagramIcon from '../assets/svgs/InstagramIcon';
+import LinkedinIcon from '../assets/svgs/linkedinicon';
+import GithubIcon from '../assets/svgs/githubicon';
+import InstagramIcon from '../assets/svgs/Instagramicon';
 import { usePage } from '@/contexts/PageContext';
 
 function HomeComp({ id }: { id: string | null }) {

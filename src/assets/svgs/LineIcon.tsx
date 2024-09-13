@@ -1,5 +1,5 @@
 import React from "react";
-import { svgProps } from "./githubIcon";
+import { svgProps } from "./githubicon";
 
 function LineIcon({ width, height, fill, style }: svgProps) {
   return (
