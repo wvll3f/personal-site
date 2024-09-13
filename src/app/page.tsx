@@ -3,8 +3,10 @@ import MenuBottom from "@/components/MenuBottom";
 import Projects from "@/components/Projects";
 import AboutMe from "@/components/AboutMe";
 import { PageProvider } from "@/contexts/PageContext";
+import Footer from "@/components/Footer";
 
 export default function Home() {
+
   return (
     <PageProvider>
       <main className="">
@@ -17,6 +19,7 @@ export default function Home() {
           <AboutMe id={'AboutMe'} />
         </div>
       </main>
+      <Footer />
     </PageProvider>
   );
 }

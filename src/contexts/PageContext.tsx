@@ -1,5 +1,5 @@
 'use client'
-
+import useObserver from '@/hooks/useObserver';
 import React, { createContext, useState, useContext, ReactNode, useEffect, useRef } from 'react';
 
 interface VisibilityType {
@@ -11,11 +11,11 @@ interface VisibilityType {
 type PageContextType = {
     largura: number;
     altura: number;
-    HomeRef: React.MutableRefObject<null | any>;
-    ProjectRef: React.MutableRefObject<null | any>;
-    AboutRef: React.MutableRefObject<null | any>;
     setAltura: React.Dispatch<React.SetStateAction<number>>;
     setLargura: React.Dispatch<React.SetStateAction<number>>;
+    HomeRef: React.MutableRefObject<null> | React.MutableRefObject<HTMLDivElement> ;
+    ProjectRef: React.MutableRefObject<null> | React.MutableRefObject<HTMLDivElement> ;
+    AboutRef: React.MutableRefObject<null> | React.MutableRefObject<HTMLDivElement> ;
 
 };
 
@@ -28,8 +28,13 @@ export const PageProvider = ({ children }: { children: ReactNode }) => {
     const HomeRef = useRef(null);
     const ProjectRef = useRef(null);
     const AboutRef = useRef(null);
+    
+    const isHome = useObserver(HomeRef, '-100px');
+    const isAbout = useObserver(AboutRef, '-100px');
+    const isProject = useObserver(ProjectRef, '-100px');
 
     useEffect(() => {
+        
         const handleResize = () => {
             setLargura(window.innerWidth)
             setAltura(window.innerHeight)
