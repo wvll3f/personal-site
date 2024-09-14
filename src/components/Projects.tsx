@@ -2,10 +2,10 @@
 
 import React from 'react'
 import Image from 'next/image';
-import WatherApp from '@/assets/watherApp.jpeg'
-import FinanceApp from '@/assets/FinanceApp.png'
-import LineIcon from '@/assets/svgs/lineicon';
-import { usePage } from '@/contexts/PageContext';
+import WatherApp from '../assets/watherApp.jpeg'
+import FinanceApp from '../assets/FinanceApp.png'
+import LineIcon from '../assets/svgs/lineicon';
+import { usePage } from '../contexts/PageContext';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 
 function Projects({ id }: { id: string | null }) {

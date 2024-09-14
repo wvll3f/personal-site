@@ -1,11 +1,10 @@
 'use client'
 
-import LineIcon from '@/assets/svgs/lineicon'
+import LineIcon from '../assets/svgs/lineicon'
 import { usePage } from '@/contexts/PageContext';
-import { ChevronRightIcon, DotFilledIcon } from '@radix-ui/react-icons'
 import React from 'react'
 import Timeline from './Timeline';
-import { EventsText } from '@/utils/eventos';
+
 
 function AbouteMe({ id }: { id: string | null }) {
 
