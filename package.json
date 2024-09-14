@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
+    "@svgr/webpack": "^8.1.0",
     "next": "14.2.5",
     "personal-site": "file:",
     "react": "^18",
