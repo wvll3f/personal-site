@@ -3,21 +3,27 @@
 import React from 'react'
 import Image from 'next/image'
 import icon from '../assets/icon.jpeg'
-import LinkedinIcon from '../assets/svgs/linkedinicon';
-import GithubIcon from '../assets/svgs/githubicon';
-import InstagramIcon from '../assets/svgs/Instagramicon';
 import { usePage } from '../contexts/PageContext';
+import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 
 function HomeComp({ id }: { id: string | null }) {
 
-    const {largura, HomeRef} = usePage(); 
+    const { largura, HomeRef } = usePage();
     return (
         <div ref={HomeRef} id={id!} className=' w-full md:w-4/5 flex flex-col items-center justify-center py-10 md:justify-center min-h-[864px] h-full gap-10 md:gap-12 bg-gradient-to-tr from-slate-100 shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 mt-12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl'>
 
-            <header className='flex w-4/5 justify-start '>  
-                <a target="_blank" href="https://www.linkedin.com/in/wallef-franco-a2a18a229/"> <LinkedinIcon height={largura < 624 ? '40' : '48'} width={largura < 624 ? '40' : '48'} /> </a>
-                <a target="_blank" href="https://github.com/wvll3f/"> <GithubIcon height={largura < 624 ? '40' : '48'} width={largura < 624 ? '40' : '48'} /> </a>
-                <a target="_blank" href=""> <InstagramIcon height={largura < 624 ? '40' : '48'} width={largura < 624 ? '40' : '48'} /></a>
+            <header className='flex w-4/5 justify-start '>
+                <a target="_blank" href="https://www.linkedin.com/in/wallef-franco-a2a18a229/">
+                    <LinkedInLogoIcon color='#09244B' height={largura < 624 ? '40' : '48'} width={largura < 624 ? '40' : '48'} />
+                </a>
+
+                <a target="_blank" href="https://github.com/wvll3f/">
+                    <GitHubLogoIcon color='#09244B' height={largura < 624 ? '40' : '48'} width={largura < 624 ? '40' : '48'} />
+                </a>
+
+                <a target="_blank" href="">
+                    <InstagramLogoIcon color='#09244B' height={largura < 624 ? '40' : '48'} width={largura < 624 ? '40' : '48'} />
+                </a>
             </header>
 
             <div className="w-4/5 flex flex-col-reverse md:flex-row md:justify-between gap-10" >
@@ -36,8 +42,8 @@ function HomeComp({ id }: { id: string | null }) {
                     <Image
                         src={icon}
                         alt="Picture of the author"
-                        layout="responsive"    
-                        className='rounded-full' 
+                        layout="responsive"
+                        className='rounded-full'
                     />
                 </div>
 
