@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 
-function useObserver(ref: any, rootMargin = "0px") {
+function useObserver(ref: React.RefObject<Element>, rootMargin = "0px") {
+  const [isVisible, setIsVisible] = React.useState(false);
 
-    const [isVisible, setIsVisible] = React.useState(false);
+  useEffect(() => {
+    const element = ref.current;
 
-    useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin }
+    );
 
-        const observer = new IntersectionObserver(
-            ([entry]) => setIsVisible(entry.isIntersecting),
-            { rootMargin }
-        );
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
+    if (element) {
+      observer.observe(element);
+    }
 
-        return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
-        };
-    }, [ref, rootMargin]);
+    return () => {
+      if (element) {
+        observer.unobserve(element); 
+      }
+    };
+  }, [ref, rootMargin]);
 
-    return isVisible;
-
+  return isVisible;
 }
 
-export default useObserver
+export default useObserver;
