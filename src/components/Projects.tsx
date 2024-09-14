@@ -4,9 +4,8 @@ import React from 'react'
 import Image from 'next/image';
 import WatherApp from '../assets/watherApp.jpeg'
 import FinanceApp from '../assets/FinanceApp.png'
-import LineIcon from '../assets/svgs/lineicon';
 import { usePage } from '../contexts/PageContext';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, LineHeightIcon } from '@radix-ui/react-icons';
 
 function Projects({ id }: { id: string | null }) {
 
@@ -17,7 +16,10 @@ function Projects({ id }: { id: string | null }) {
 
             <div className='flex flex-col items-center w-full gap-3'>
                 <h1 className='font-bold text-4xl' >PROJETOS</h1>
-                <LineIcon />
+                <div className='relative flex justify-center w-full h-full mt-2'>
+                    <hr className='bg-blueDark w-52 h-0.5' />
+                    <div className='absolute -top-1.5 rotate-45 w-4 h-4 bg-blueDark ring-4 ring-whiteBG'></div>
+                </div>
             </div>
 
             <a target="_blank" href='https://github.com/wvll3f/WeatherApp' className='md:transition md:duration-300 md:ease-in-out md:hover:scale-105 flex mt-20 gap-5 lg:mb-10 relative group flex-wrap mdlg:flex-nowrap bg-gradient-to-tr from-slate-50 shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 p-4'>

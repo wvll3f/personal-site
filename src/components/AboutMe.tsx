@@ -1,6 +1,5 @@
 'use client'
 
-import LineIcon from '../assets/svgs/lineicon'
 import { usePage } from '@/contexts/PageContext';
 import React from 'react'
 import Timeline from './Timeline';
@@ -16,7 +15,10 @@ function AbouteMe({ id }: { id: string | null }) {
             <div className='flex flex-col items-center justify-center w-full gap-10  '>
                 <div className='flex flex-col items-center'>
                     <h1 className='font-bold text-2xl md:text-4xl' >SOBRE MIM</h1>
-                    <LineIcon />
+                    <div className='relative w-full h-full mt-2'>
+                        <hr className='bg-blueDark w-52 h-0.5' />
+                        <div className='absolute left-[46%] -top-1.5 rotate-45 w-4 h-4 bg-blueDark ring-4 ring-whiteBG'></div>
+                    </div>
                 </div>
 
                 <Timeline />
