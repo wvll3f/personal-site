@@ -22,7 +22,7 @@ function Projects({ id }: { id: string | null }) {
                 </div>
             </div>
 
-            <a target="_blank" href='https://github.com/wvll3f/WeatherApp' className='md:transition md:duration-300 md:ease-in-out md:hover:scale-105 flex mt-20 gap-5 lg:mb-10 relative group flex-wrap mdlg:flex-nowrap bg-gradient-to-tr from-slate-50 shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 p-4'>
+            <a target="_blank" href='https://github.com/wvll3f/WeatherApp' className='md:transition md:duration-300 md:ease-in-out md:hover:scale-105 flex mt-20 gap-5 lg:mb-10 relative group flex-wrap mdlg:flex-nowrap bg-gradient-to-tr from-whiteBG to-white shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 p-4'>
                 <ExternalLinkIcon color='#E3E3E3' width={32} height={32} className='absolute right-2 top-2 hidden md:group-hover:block' />
                 <div className='rounded-md min-w-[325px] w-full lg:max-w-[540px]'>
                     <Image
@@ -41,7 +41,7 @@ function Projects({ id }: { id: string | null }) {
 
             </a>
 
-            <a target="_blank" href='https://github.com/wvll3f/transations-control-front' className='md:transition md:duration-300 md:ease-in-out md:hover:scale-105 group flex mt-18 gap-5 lg:mb-10 flex-wrap mdlg:flex-nowrap bg-gradient-to-tr from-slate-50 shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 p-4 ' >
+            <a target="_blank" href='https://github.com/wvll3f/transations-control-front' className='md:transition md:duration-300 md:ease-in-out md:hover:scale-105 group flex mt-18 gap-5 lg:mb-10 flex-wrap mdlg:flex-nowrap bg-gradient-to-tr from-whiteBG to-white shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 p-4 ' >
                 <ExternalLinkIcon color='#E3E3E3' width={32} height={32} className='absolute right-2 top-2 hidden md:group-hover:block' />
                 <div className='rounded-md h-auto min-w-[325px] w-full lg:max-w-[540px] '>
                     <Image
