@@ -26,7 +26,7 @@ function HomeComp({ id }: { id: string | null }) {
                 </a>
             </header>
 
-            <div className="w-4/5 flex flex-col-reverse md:flex-row md:justify-between gap-10" >
+            <div className="w-4/5 flex flex-col-reverse md:flex-row md:justify-center md:items-center gap-10" >
                 <aside className='flex-1' >
                     <h1 className='font-bold text-base md:text-5xl flex text-blueLight gap-2' >Prazer,  Wallef Amorim.</h1>
 
