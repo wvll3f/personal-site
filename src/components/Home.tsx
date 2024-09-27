@@ -10,7 +10,7 @@ function HomeComp({ id }: { id: string | null }) {
 
     const { largura, HomeRef } = usePage();
     return (
-        <div ref={HomeRef} id={id!} className=' w-full md:w-4/5 flex flex-col items-center justify-center py-10 md:justify-center min-h-[864px] h-full gap-10 md:gap-12 bg-gradient-to-tr from-slate-100 shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 mt-12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl'>
+        <div ref={HomeRef} id={id!} className='bg-gradient-to-tr from-whiteBG to-white w-full md:w-4/5 flex flex-col items-center justify-center py-10 md:justify-center min-h-[864px] h-full gap-10 md:gap-12 shadow-md border-b-2 rounded-lg border-t-slate-50 border-t-2 mt-12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl'>
 
             <header className='flex w-4/5 justify-start '>
                 <a target="_blank" href="https://www.linkedin.com/in/wallef-franco-a2a18a229/">
@@ -26,7 +26,7 @@ function HomeComp({ id }: { id: string | null }) {
                 </a>
             </header>
 
-            <div className="w-4/5 flex flex-col-reverse md:flex-row md:justify-between gap-10" >
+            <div className="w-4/5 flex flex-col-reverse md:flex-row md:justify-center md:items-center gap-10" >
                 <aside className='flex-1' >
                     <h1 className='font-bold text-base md:text-5xl flex text-blueLight gap-2' >Prazer,  Wallef Amorim!</h1>
 
