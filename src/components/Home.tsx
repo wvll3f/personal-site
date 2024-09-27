@@ -28,11 +28,13 @@ function HomeComp({ id }: { id: string | null }) {
 
             <div className="w-4/5 flex flex-col-reverse md:flex-row md:justify-between gap-10" >
                 <aside className='flex-1' >
-                    <h1 className='font-bold text-base md:text-5xl flex text-blueLight gap-2' >Prazer,  Wallef Amorim.</h1>
+                    <h1 className='font-bold text-base md:text-5xl flex text-blueLight gap-2' >Prazer,  Wallef Amorim!</h1>
 
                     <h2 className='font-bold text-base lg:text-4xl mt-2' >Desenvolvedor Web</h2>
 
-                    <p className='text-xs lg:text-lg text-justify mt-5' >Olá! Sou profissional de Tecnologia da Informação, atualmente foco meus estudos e direciono minha carreira para a área de programação. Focando nas linguagens Java e JavaScript e nas tecnologias Spring e ReactJS. Graças ao meu atual trabalho possuo vasto conhecimento na área de redes e tenho contato constante com sistemas Linux.</p>
+                    <p className='text-xs lg:text-lg text-justify mt-5' >Oi, tudo bem? Sou um profissional de TI, focado em desenvolvimento de software com as linguagens Java, JavaScript. Meu objetivo é sempre construir soluções inteligentes e funcionais que resolvam problemas reais. <br />
+                    <strong>Se você busca um desenvolvedor que esteja pronto para colaborar e trazer  soluções inovadoras para projetos, vamos trabalhar juntos!</strong> 
+                    </p>
 
                     <button className=" mt-5 p-3 text-white bg-blueLight hover:bg-blueDark  font-medium rounded-xl text-md dark:bg-blueLight dark:hover:bg-blueDark">
                         <a href="https://api.whatsapp.com/send/?phone=71992469763&text=Ola%20Wallef%2C%20tudo%20bem%3F%20Vim%20pelo%20seu%20site%21&type=phone_number&app_absent=0 h-full w-full" target="_blank" >Contate-me</a>
