@@ -32,8 +32,7 @@ function HomeComp({ id }: { id: string | null }) {
 
                     <h2 className='font-bold text-base lg:text-4xl mt-2' >Desenvolvedor Web</h2>
 
-                    <p className='text-xs lg:text-lg text-justify mt-5' >Oi, tudo bem? Sou um profissional de TI, focado em desenvolvimento web com as linguagens Java, JavaScript. Meu objetivo é sempre construir soluções inteligentes e funcionais que resolvam problemas reais. <br />
-                    <strong>Se você busca um desenvolvedor que esteja pronto para colaborar e trazer  soluções inovadoras para projetos, vamos trabalhar juntos!</strong> 
+                    <p className='text-xs lg:text-lg text-justify mt-5' >Oi, tudo bem? Sou um profissional de TI, focado em desenvolvimento web com as linguagens Java, JavaScript. Meu objetivo é sempre construir soluções inteligentes e funcionais que resolvam problemas reais. <strong>Se você busca um desenvolvedor que esteja pronto para colaborar e trazer  soluções inovadoras para projetos, vamos trabalhar juntos!</strong> 
                     </p>
 
                     <button className=" mt-5 p-3 text-white bg-blueLight hover:bg-blueDark  font-medium rounded-xl text-md dark:bg-blueLight dark:hover:bg-blueDark">

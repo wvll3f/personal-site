@@ -21,7 +21,7 @@ export const EventsText:EventsTextProps[] = [
         direction: "right"
     },
     {
-        heading: "Carreira profissional",
+        heading: "Carreira - 2024",
         subHeading: "Atualmente, atuo como desenvolvedor autônomo, focado em web. Embora trabalhe na área de redes em uma empresa, meu objetivo é fazer a transição completa para o desenvolvimento de software, buscando novas oportunidades para crescer e contribuir com projetos inovadores.",
         direction: "left"
     },
