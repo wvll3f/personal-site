@@ -12,17 +12,17 @@ export const EventsText:EventsTextProps[] = [
     },
     {
         heading: "F&F Comunicaçoes - 2022",
-        subHeading: "Aumentei meus conhecimentos de redes e infraestrutura.",
+        subHeading: "Aprofundei meus conhecimentos em redes e infraestrutura, aplicando soluções práticas no ambiente corporativo.",
         direction: "left"
     },
     {
         heading: "Origamid - 2023",
-        subHeading: "Investir em conhecimentos para Front end, com javascript e reactJS.",
+        subHeading: "Aprimorei minhas habilidades de Front-end, especializando-me em JavaScript e ReactJS para criar interfaces modernas e dinâmicas.",
         direction: "right"
     },
     {
-        heading: "Mercado de trabalho - 2024",
-        subHeading: "Estou direcionando minha carreira para trabalhar na área em busca principalmente de experiências.",
+        heading: "Carreira profissional",
+        subHeading: "Atualmente, atuo como desenvolvedor autônomo, focado em web. Embora trabalhe na área de redes em uma empresa, meu objetivo é fazer a transição completa para o desenvolvimento de software, buscando novas oportunidades para crescer e contribuir com projetos inovadores.",
         direction: "left"
     },
 
