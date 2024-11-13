@@ -19,12 +19,12 @@ Este é o código-fonte do meu site pessoal, desenvolvido com **Next.js** e esti
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/username/meu-site-pessoal.git
+   git clone https://github.com/wvll3f/personal-site.git
    ```
 
 2. Instale as dependências:
    ```bash
-   cd meu-site-pessoal
+   cd personal-site
    npm install
    ```
 
