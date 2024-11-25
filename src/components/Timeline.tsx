@@ -18,7 +18,7 @@ const Circle = () => {
 }
 const CardEvent = ({ heading, subHeading }: timelineProps) => {
     return (
-        <div className='bg-gradient-to-tr from-whiteBG to-white flex flex-col max-w-[500px] gap-y-2 border-b-2 border-t-slate-50 border-t-2 shadow-md rounded-xl p-4 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl'>
+        <div className=' bg-gradient-to-tr from-whiteBG to-white flex flex-col max-w-[500px] gap-y-2 border-b-2 border-t-slate-50 border-t-2 shadow-md rounded-xl p-4 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl'>
             <h1 className='text-blueDark font-bold text-sm md:text-lg border-b' >{heading || 'nada'}</h1>
             <p className='text-[8px] md:text-sm text-gray-700' >{subHeading || 'nada'}</p>
         </div>
